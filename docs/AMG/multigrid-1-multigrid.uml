@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EN_vINv_EfCVS9hteqRWfg" name="AMG">
+  <packagedElement xmi:type="uml:Model" xmi:id="_I2inkNv_EfCVS9hteqRWfg" name="multigrid-1-multigrid">
+    <packagedElement xmi:type="uml:Class" xmi:id="_N-TLkNv_EfCVS9hteqRWfg" name="AMG" visibility="public">
+      <ownedAttribute xmi:id="_b4ZJENwZEfCn_6asCh3Cpw" name="maxLevels" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_f0rYcNwZEfCn_6asCh3Cpw" name="minCoarseSize" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iGwIwNwZEfCn_6asCh3Cpw" name="theta" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_nROCgNwZEfCn_6asCh3Cpw" name="buildHierarchy" visibility="private"/>
+      <ownedOperation xmi:id="_xdMHQNwZEfCn_6asCh3Cpw" name="computeStrongConnections" visibility="private">
+        <ownedParameter xmi:id="_xdMHQdwZEfCn_6asCh3Cpw" name="S" type="_gS9OsNv_EfCVS9hteqRWfg" isUnique="false" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_JurVMNwaEfCn_6asCh3Cpw" name="coarsenCF" visibility="private">
+        <ownedParameter xmi:id="_JurVMdwaEfCn_6asCh3Cpw" name="vec" type="_kUUyYNv_EfCVS9hteqRWfg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Om4aQNwaEfCn_6asCh3Cpw" name="buildInterpolation" visibility="private">
+        <ownedParameter xmi:id="_Om4aQdwaEfCn_6asCh3Cpw" name="P" type="_gS9OsNv_EfCVS9hteqRWfg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ftrjINwaEfCn_6asCh3Cpw" name="buildRestriction" visibility="private">
+        <ownedParameter xmi:id="_ftrjIdwaEfCn_6asCh3Cpw" name="P" type="_gS9OsNv_EfCVS9hteqRWfg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_noMioNwaEfCn_6asCh3Cpw" name="jacobiSmooth" visibility="private"/>
+      <ownedOperation xmi:id="_ziysYNwaEfCn_6asCh3Cpw" name="vcycleRecursive" visibility="private"/>
+      <ownedOperation xmi:id="_OuWz4NwdEfCn_6asCh3Cpw" name="AMG">
+        <ownedParameter xmi:id="_OuWz4dwdEfCn_6asCh3Cpw" name="objject" type="_N-TLkNv_EfCVS9hteqRWfg" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_BnJ3oNweEfCn_6asCh3Cpw" client="_N-TLkNv_EfCVS9hteqRWfg" supplier="_lfu58NwdEfCn_6asCh3Cpw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lfu58NwdEfCn_6asCh3Cpw" name="Utilities" visibility="public">
+      <ownedOperation xmi:id="_tRMEENwdEfCn_6asCh3Cpw" name="saveSparseMatrix"/>
+      <ownedOperation xmi:id="_uxWPQNwdEfCn_6asCh3Cpw" name="saveVector"/>
+      <ownedOperation xmi:id="_w7lSMNwdEfCn_6asCh3Cpw" name="loadSparseMatrix"/>
+      <ownedOperation xmi:id="_yjqDQNwdEfCn_6asCh3Cpw" name="loadVector"/>
+      <ownedOperation xmi:id="_z0yT8NwdEfCn_6asCh3Cpw" name="printHeader"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_MnW1sNweEfCn_6asCh3Cpw" client="_N-TLkNv_EfCVS9hteqRWfg" supplier="_6fFH4NwAEfCVS9hteqRWfg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6fFH4NwAEfCVS9hteqRWfg" name="LinearAlgebra" visibility="public">
+      <ownedOperation xmi:id="_skMtINwbEfCn_6asCh3Cpw" name="jacobi">
+        <ownedParameter xmi:id="_skMtIdwbEfCn_6asCh3Cpw" name="state" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_gS9OsNv_EfCVS9hteqRWfg" name="SpMat"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_kUUyYNv_EfCVS9hteqRWfg" name="SpVec"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PXQikNv_EfCVS9hteqRWfg" name="Level" visibility="public">
+      <ownedAttribute xmi:id="_ZtfWkNv_EfCVS9hteqRWfg" name="A" type="_gS9OsNv_EfCVS9hteqRWfg" isUnique="false"/>
+      <ownedAttribute xmi:id="_aH5aoNv_EfCVS9hteqRWfg" name="P" type="_gS9OsNv_EfCVS9hteqRWfg" isUnique="false"/>
+      <ownedAttribute xmi:id="_TANpcNwDEfCVS9hteqRWfg" name="R" type="_gS9OsNv_EfCVS9hteqRWfg" isUnique="false"/>
+      <ownedAttribute xmi:id="_WummwNwDEfCVS9hteqRWfg" name="strong" type="_gS9OsNv_EfCVS9hteqRWfg" isUnique="false"/>
+      <ownedAttribute xmi:id="_dtV6gNwDEfCVS9hteqRWfg" name="active" type="_kUUyYNv_EfCVS9hteqRWfg" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sJ5DoNwDEfCVS9hteqRWfg" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_4m26oNwDEfCVS9hteqRWfg" name="numLevels" concurrency="concurrent" isQuery="true">
+        <ownedParameter xmi:id="_5bOU0NwZEfCn_6asCh3Cpw" name="num" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_XhvQsNv_EfCVS9hteqRWfg" name=""/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YiU5ENwBEfCVS9hteqRWfg" name="Discretization" isAbstract="true">
+      <generalization xmi:id="_FOT1QNwCEfCVS9hteqRWfg" general="_hfaI0NwBEfCVS9hteqRWfg"/>
+      <generalization xmi:id="_HyqoYNwCEfCVS9hteqRWfg" general="_ftLWMNwBEfCVS9hteqRWfg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hfaI0NwBEfCVS9hteqRWfg" name="RecDomain" visibility="public">
+      <ownedAttribute xmi:id="_QTHAoNwcEfCn_6asCh3Cpw" name="x0" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        <defaultValue xmi:type="uml:LiteralReal" xmi:id="_QTHAodwcEfCn_6asCh3Cpw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_VC6-sNwcEfCn_6asCh3Cpw" name="x1">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        <defaultValue xmi:type="uml:LiteralReal" xmi:id="_VC6-sdwcEfCn_6asCh3Cpw" value="1.0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_YDPVENwcEfCn_6asCh3Cpw" name="y0">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        <defaultValue xmi:type="uml:LiteralReal" xmi:id="_YDPVEdwcEfCn_6asCh3Cpw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_bPkHINwcEfCn_6asCh3Cpw" name="y1">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        <defaultValue xmi:type="uml:LiteralReal" xmi:id="_bPkHIdwcEfCn_6asCh3Cpw" value="1.0"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ftLWMNwBEfCVS9hteqRWfg" name="FDGrid" visibility="public">
+      <ownedAttribute xmi:id="_PaANMtwCEfCVS9hteqRWfg" name="dom" type="_hfaI0NwBEfCVS9hteqRWfg" association="_PZ-_ENwCEfCVS9hteqRWfg"/>
+      <ownedAttribute xmi:id="_7I09ktwCEfCVS9hteqRWfg" name="level" type="_PXQikNv_EfCVS9hteqRWfg" aggregation="shared" association="_7I0WgNwCEfCVS9hteqRWfg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7I1koNwCEfCVS9hteqRWfg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7I1kodwCEfCVS9hteqRWfg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_m9pe4NwcEfCn_6asCh3Cpw" name="nx">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pLt48NwcEfCn_6asCh3Cpw" name="ny">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_sy9FYNwcEfCn_6asCh3Cpw" name="h">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_52HZsNwcEfCn_6asCh3Cpw" name="makeGrid">
+        <ownedParameter xmi:id="_52HZsdwcEfCn_6asCh3Cpw" name="grid" type="_ftLWMNwBEfCVS9hteqRWfg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_8jT_wNwcEfCn_6asCh3Cpw" name="assembleVariableCoeffPoisson"/>
+      <ownedOperation xmi:id="_GNj3gNwdEfCn_6asCh3Cpw" name="assembleRHS"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PZ-_ENwCEfCVS9hteqRWfg" memberEnd="_PaANMtwCEfCVS9hteqRWfg _PaGT0NwCEfCVS9hteqRWfg">
+    <eAnnotations xmi:id="_PaANMNwCEfCVS9hteqRWfg" source="org.eclipse.papyrus">
+      <details xmi:id="_PaANMdwCEfCVS9hteqRWfg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_PaGT0NwCEfCVS9hteqRWfg" name="fdgrid" type="_ftLWMNwBEfCVS9hteqRWfg" association="_PZ-_ENwCEfCVS9hteqRWfg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SPOG0NwCEfCVS9hteqRWfg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7I0WgNwCEfCVS9hteqRWfg" memberEnd="_7I09ktwCEfCVS9hteqRWfg _7I1kotwCEfCVS9hteqRWfg" navigableOwnedEnd="_7I1kotwCEfCVS9hteqRWfg">
+    <eAnnotations xmi:id="_7I09kNwCEfCVS9hteqRWfg" source="org.eclipse.papyrus">
+      <details xmi:id="_7I09kdwCEfCVS9hteqRWfg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_7I1kotwCEfCVS9hteqRWfg" name="fdgrid" type="_ftLWMNwBEfCVS9hteqRWfg" association="_7I0WgNwCEfCVS9hteqRWfg"/>
+  </packagedElement>
+</uml:Model>
