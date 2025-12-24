@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/thomas/Desktop/AMSC/AMSC-multigrid/build",
+  "command": "/usr/bin/c++  -I/home/thomas/Desktop/AMSC/AMSC-multigrid/include -I/home/thomas/Desktop/AMSC/AMSC-multigrid/src -isystem /usr/include/eigen3 -O3 -DNDEBUG -std=c++17 -Wall -Wextra -pedantic -fopenmp -o CMakeFiles/main.dir/src/main.cpp.o -c /home/thomas/Desktop/AMSC/AMSC-multigrid/src/main.cpp",
+  "file": "/home/thomas/Desktop/AMSC/AMSC-multigrid/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/thomas/Desktop/AMSC/AMSC-multigrid/build",
+  "command": "/usr/bin/c++  -I/home/thomas/Desktop/AMSC/AMSC-multigrid/include -I/home/thomas/Desktop/AMSC/AMSC-multigrid/src -isystem /usr/include/eigen3 -O3 -DNDEBUG -std=c++17 -Wall -Wextra -pedantic -fopenmp -o CMakeFiles/main.dir/src/AMG.cpp.o -c /home/thomas/Desktop/AMSC/AMSC-multigrid/src/AMG.cpp",
+  "file": "/home/thomas/Desktop/AMSC/AMSC-multigrid/src/AMG.cpp",
+  "output": "CMakeFiles/main.dir/src/AMG.cpp.o"
+},
+{
+  "directory": "/home/thomas/Desktop/AMSC/AMSC-multigrid/build",
+  "command": "/usr/bin/c++  -I/home/thomas/Desktop/AMSC/AMSC-multigrid/include -I/home/thomas/Desktop/AMSC/AMSC-multigrid/src -isystem /usr/include/eigen3 -O3 -DNDEBUG -std=c++17 -Wall -Wextra -pedantic -fopenmp -o CMakeFiles/example.dir/tests/example.cpp.o -c /home/thomas/Desktop/AMSC/AMSC-multigrid/tests/example.cpp",
+  "file": "/home/thomas/Desktop/AMSC/AMSC-multigrid/tests/example.cpp",
+  "output": "CMakeFiles/example.dir/tests/example.cpp.o"
+},
+{
+  "directory": "/home/thomas/Desktop/AMSC/AMSC-multigrid/build",
+  "command": "/usr/bin/c++  -I/home/thomas/Desktop/AMSC/AMSC-multigrid/include -I/home/thomas/Desktop/AMSC/AMSC-multigrid/src -isystem /usr/include/eigen3 -O3 -DNDEBUG -std=c++17 -Wall -Wextra -pedantic -fopenmp -o CMakeFiles/example.dir/src/AMG.cpp.o -c /home/thomas/Desktop/AMSC/AMSC-multigrid/src/AMG.cpp",
+  "file": "/home/thomas/Desktop/AMSC/AMSC-multigrid/src/AMG.cpp",
+  "output": "CMakeFiles/example.dir/src/AMG.cpp.o"
+},
+{
+  "directory": "/home/thomas/Desktop/AMSC/AMSC-multigrid/build",
+  "command": "/usr/bin/c++  -I/home/thomas/Desktop/AMSC/AMSC-multigrid/include -I/home/thomas/Desktop/AMSC/AMSC-multigrid/src -isystem /usr/include/eigen3 -O3 -DNDEBUG -std=c++17 -Wall -Wextra -pedantic -fopenmp -o CMakeFiles/convergence_test.dir/tests/convergence_test.cpp.o -c /home/thomas/Desktop/AMSC/AMSC-multigrid/tests/convergence_test.cpp",
+  "file": "/home/thomas/Desktop/AMSC/AMSC-multigrid/tests/convergence_test.cpp",
+  "output": "CMakeFiles/convergence_test.dir/tests/convergence_test.cpp.o"
+},
+{
+  "directory": "/home/thomas/Desktop/AMSC/AMSC-multigrid/build",
+  "command": "/usr/bin/c++  -I/home/thomas/Desktop/AMSC/AMSC-multigrid/include -I/home/thomas/Desktop/AMSC/AMSC-multigrid/src -isystem /usr/include/eigen3 -O3 -DNDEBUG -std=c++17 -Wall -Wextra -pedantic -fopenmp -o CMakeFiles/convergence_test.dir/src/AMG.cpp.o -c /home/thomas/Desktop/AMSC/AMSC-multigrid/src/AMG.cpp",
+  "file": "/home/thomas/Desktop/AMSC/AMSC-multigrid/src/AMG.cpp",
+  "output": "CMakeFiles/convergence_test.dir/src/AMG.cpp.o"
+}
+]
