@@ -41,7 +41,7 @@ Unlike Geometric Multigrid, this solver builds levels by analyzing directly the 
 | `example.cpp`        | Tests for 1D and 2D Poisson problems.                                    |
 | `main.cpp`           | Command-line interface for solving custom matrices and RHS files.        |
 
-<img src="./images/classDiagram.png"/>
+<img src="./images/class_diagram.png"/>
 
 ## Software Architecture & Code Mapping
 
